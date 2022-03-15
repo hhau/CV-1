@@ -31,7 +31,7 @@ tibble::tribble(
                                         ~title,                                 ~inst,       ~location,                     ~time,                                                                            ~description,
                           "PhD, Biostatistics",             "University of Cambridge",    "Cambridge, UK", "Oct 2018 -- Jun 2022 (expected)", c("Bayesian methods for integrating multiple sources of information, predictive elicitation and Bayesian optimisation.", "Applications include respiratory failure and electronic health records; evidence synthesis models for influenza; population ecology. ", "Funded by a scholarship from The Alan Turing Institute (5 awarded to international students from approx. 300 applications)."),
             "Master of Philosophy, Statistics", "The University of Western Australia", "Perth, Australia", "Jan 2016 -- Jan 2018", c("Thesis: \\href{https://research-repository.uwa.edu.au/en/publications/methodology-for-bayesian-monotonic-polynomials}{Methodology for Bayesian Monotonic Polynomials}."),
-  "Bachelor of Science, Honours (First class)", "The University of Western Australia", "Perth, Australia", "Jan 2015 -- Nov 2015", c("Thesis: Dynamic Bayesian forecasting of AFL match results using the Skellam distribution.",  "Grade point average: 7/7; Weighted average mark: 86.5/100."),
+  "Bachelor of Science, Honours (First class)", "The University of Western Australia", "Perth, Australia", "Jan 2015 -- Nov 2015", c("Major: Mathematics and Statistics", "Thesis: Dynamic Bayesian forecasting of AFL match results using the Skellam distribution.",  "Grade point average: 7/7; Weighted average mark: 86.5/100."),
                          "Bachelor of Science", "The University of Western Australia", "Perth, Australia", "Mar 2012 -- Nov 2014", c("Majors: Engineering Science, Mathematics and Statistics.", "Grade point average: 6.25/7; Weighted average mark: 78/100.")
   ) %>%
   detailed_entries(
@@ -50,16 +50,17 @@ tibble::tribble(
 tibble::tribble(
                              ~title,                                                                ~inst,          ~location,                  ~time, ~description,
                "Research Assistant",                                             "MRC Biostatistics Unit",    "Cambridge, UK", "Apr 2020 -- Sep 2020", c("Member of the MRC Biostatistics Unit's DECOVID team, and the project-wide software and tooling team.", "Project used electronic health records to improve care for COVID-19 patients with co-occurring haemotological conditions."),
-               "Research Assistant",              "Oceans Institute, The University of Western Australia", "Perth, Australia", "Mar 2018 -- Sep 2018", c("Statistician on a multidisciplinary team of Oceanographers, Software Engineers and Statisticians.", "Joint project between the UWA Oceans institute and The Alan Turing Institute.", "First author on resulting publication."),
+               "Research Assistant",              "Oceans Institute, The University of Western Australia", "Perth, Australia", "Mar 2018 -- Sep 2018", c("Statistician on a multidisciplinary team of oceanographers, software engineers and statisticians.", "Joint project between the UWA Oceans institute and The Alan Turing Institute.", "First author on resulting publication."),
            "Statistical Consultant", "Centre for Applied Statistics, The University of Western Australia", "Perth, Australia", "Sep 2017 -- Nov 2017", "Applied statistician for veterinary science study into an exercise induced disease in horses.",
-  "Demonstrator, content developer",                                "The University of Western Australia", "Perth, Australia",         "2015 -- 2018", c("Wrote and taught tutorials for masters level unit on Bayesian statistics and computational methods.", "Demonstrator for the first and second year undergraduate classes called 'Statistics for science' and 'Analysis of Observations'.")
+  "Demonstrator, content developer",                                "The University of Western Australia", "Perth, Australia",         "2015 -- 2018", c("Wrote and taught tutorials for masters level unit on Bayesian statistics and computational methods.", "Demonstrator for the first and second year undergraduate classes \\textit{Statistics for Science} and \\textit{Analysis of Observations}.")
   ) %>%
   detailed_entries(
     what = title,
     when = time,
     with = inst,
     where = location,
-    why = description
+    why = description,
+    .protect = FALSE
   )
 ```
 
@@ -93,18 +94,18 @@ tibble::tribble(
 - Reviewer for _Bayesian Analysis_, _Computational Statistics_, _AStA Advances in Statistical Analysis_, _Australian & New Zealand Journal of Statistics_.
 - Co-organiser of \href{https://www.mrc-bsu.cam.ac.uk/event/biostatistics-for-chronic-diseases/}{\textit{Biostatistics for chronic diseases}}, a one day conference (Oct 2021) for the application of biostatistics and statistical genetics to chronic diseases.
 
-# Skills
+# Software
 
 - I am an expert `R` and `Stan` user, having been regular user of both for nearly 8 years. I make open source contributions to various `R` packages in the `Stan` ecosystem, and have written many of my own R packages to support my research.
   - See my GitHub for examples, including [`wsre`](https://github.com/hhau/wsre), [`pbbo`](https://github.com/hhau/pbbo), [`ddcurves2`](https://github.com/hhau/ddcurves2), [`rjmonopoly`](https://github.com/hhau/rjmonopoly).
 - I strive to make my research highly reproducible, and consequently make heavy use of `git` and `make`.
-- I have a working knowledge of `SQL` from my work with electronic health records (particularly OMOP, SNOMED/ICD10, MIMIC-III), and `python` from collaborative work with subject-matter experts.
+- I have a working knowledge of `SQL` from my work with electronic health records (particularly OMOP, SNOMED/ICD10, MIMIC-III), `python` from collaborative work with subject-matter experts, and `C++` through its `R` interface `Rcpp`.
 
 # References
 
 Details available on request
 
-- Dr Robert Goudie (Senior Research Associate, MRC Biostatistics Unit)
-- Dr Berwin Turlach (Associate Professor, the University of Western Australia)
-- Dr Edward Cripps (Associate Professor, the University of Western Australia)
-- Dr Paul Kirk (Group leader (Programme Leader Track), MRC Biostatistics Unit)
+- Dr Robert Goudie -- Senior Research Associate, MRC Biostatistics Unit
+- Dr Berwin Turlach -- Associate Professor, The University of Western Australia
+- Dr Edward Cripps -- Associate Professor, The University of Western Australia
+- Dr Paul Kirk -- Group leader (Programme Leader Track), MRC Biostatistics Unit
