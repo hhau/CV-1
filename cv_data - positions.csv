@@ -1,0 +1,32 @@
+section,title,loc,institution,start,end,description_1,description_2,description_3,in_resume
+education,"PhD, Biostatistics",University of Cambridge,"Cambridge, UK",Oct 2018,June 2022,Working on Bayesian methods for integrating multiple sources of information,Funded by a studentship from The Alan Turing Institute,,TRUE
+education,"Master of Philosophy, Statistics",The University of Western Australia,"Perth, Australia ",Jan 2016,Jan 2018,Thesis: Methodology for Bayesian Monotonic Polynomials,,,TRUE
+education,"Bachelor of Science, Honours (First class)",The University of Western Australia,"Perth, Australia ",Jan 2015,Nov 2015,Thesis:Dynamic Bayesian forecasting of AFL match results using the Skellam distribution,Grade point average: 7/7; Weighted average mark: 86.5/100,,TRUE
+education,Bachelor of Science,The University of Western Australia,"Perth, Australia ",Mar 2012,Nov 2014,"Majors: Engineering Science, Mathematics & Statistics.",Grade point average: 6.25/7; Weighted average mark: 78/100,,TRUE
+research_positions,Research Assistant,MRC Biostatistics Unit,"Cambridge, UK",Apr 2020,Sep 2020,Member of BSU's DECOVID team -- project used eletronic health records to improve care for COVID-19 patients with co-occurring haemotological conditions. ,,,TRUE
+research_positions,Research Assistant,Oceans Institute,The University of Western Australia,Mar 2018,Sep 2018,"Statistician on a multidisciplinary team of Oceanographers, Software Engineers and Statisticians.",Joint project between the UWA Oceans institute and The Alan Turing Institute.,First author on resulting publication,TRUE
+research_positions,Statistical Consultant,Centre for Applied Statistics,The University of Western Australia,Sep 2017,Nov 2017,Applied statistician for veterinary science study into an exercise induced disease in horses,,,FALSE
+industry_positions,example_industry_title,company_name,company_location,9999,9999,A description,,,FALSE
+teaching_positions,Bayesian Computing and Statistics,The University of Western Australia,"Perth, Australia ",2017,2018,Tutor/Lab demonstrator,Wrote and taught tutorials for unit on Bayesian statistics and computational methods.,Masters level class,TRUE
+teaching_positions,Statistics for Science,The University of Western Australia,"Perth, Australia ",2015,2016,Tutor/Lab demonstrator,Introduction to statistics -- for science students,First year undergraduate class,TRUE
+teaching_positions,Analysis of Experiments,The University of Western Australia,"Perth, Australia ",2016,2016,Tutor/Lab demonstrator,Covered General Linear Models and some of their extensions,Second year undergraduate quantitative methods class,TRUE
+data_science_writings,[example_linke](example_url),,,,2018,,,,FALSE
+about_me_press,[example_linke](example_url),,,2017,2017,,,,FALSE
+by_me_press,[example_linke](example_url),,,2016,2016,,,,FALSE
+academic_articles,[A numerically stable algorithm for integrating Bayesian models using Markov melding](https://arxiv.org/abs/2001.08038),arXiv preprint,,2020,2020,"Authored with Goudie, R. J. B.",First author,,TRUE
+academic_articles,[Uncertainty quantification of density and stratification estimates with implications for predicting ocean dynamics](https://doi.org/10.1175/JTECH-D-18-0200.1),Journal of Atmospheric and Oceanic Technology,,2019,2019,"Authored with Rayson, M., Cripps, E., Girolami, M., Gosling, J.P., Hodkiewicz, M., Jones, N. and Ivey, G",First author,,TRUE
+academic_articles,[Exercise‐induced pulmonary haemorrhage in Thoroughbred racehorses: a longitudinal study](https://doi.org/10.1111/evj.12957),Equine Veterinary Journal,,2019,2019,"Authored with Crispe, E. J., Secombe, C. J., Perera, D. I., Turlach, B. A. and Lester, G. D.",Output of short-term statistical consulting job with UWA's Centre for Applied Statistics,,TRUE
+academic_articles,Flexible Regression Modelling Under Shape Constraints,"Book chapter in: 'Flexible Bayesian Regression Modelling, Fan, Y., Nott, D., Smith, M.S., Dortet-Bernadet, J.-L. (Eds.)'",,2019,2019,"Authored with Murray, K., Turlach, B.A",First author,,TRUE
+academic_articles,[Dynamic Bayesian forecasting of AFL match results using the Skellam distribution](https://doi.org/10.1111/anzs.12225),Australian & New Zealand Journal of Statistics,,2018,2018,"Authored with Murray, K., Turlach, B.A",First author,,TRUE
+academic_articles,[Monotone polynomials using BUGS and Stan](https://doi.org/10.1111/anzs.12207),Australian & New Zealand Journal of Statistics,,2017,2017,"Authored with Murray, K., Turlach, B.A",First author,,TRUE
+academic_talks,Combining multiple sources of information with Markov melding,The University of Western Australia,,,2020,Invited Talk,,,TRUE
+academic_talks,"Markov melding, multi-stage sampling, and self-density ratios",MRC Biostatistics Unit,University of Cambridge,,2019,,,,TRUE
+academic_talks,Order selection and Incorporating Random Effects into Bayesian Monotonic Polynomials,Statistical Society of Australia Young Statisticians Conference,"Gold Coast, Australia",,2017,,,,TRUE
+professional_service,Reviewer for Bayesian Analysis,,,,2020,,,,TRUE
+professional_service,Reviewer for Computational Statistics,,,,2021,,,,TRUE
+professional_service,Reviewer for AStA Advances in Statistical Analysis,,,,2021,,,,
+professional_service,Reviewer for the Australian and New Zealand Journal of Statistics,,,,2021,,,,TRUE
+academic_talks,Combining Chains of Bayesian Models with Markov Melding,Speed presentation at the Joint Statistical Meetings,Virtual,,2021,,,,
+academic_talks,Combining Chains of Bayesian Models with Markov Melding,Contributed Presentation at the Royal Statistical Society's International conference,"Manchester, UK",,2021,,,,
+academic_talks,Dynamic Bayesian forecasting of AFL match results using the Skellam distribution,The University of Western Australia,"Perth, Australian",,2015,Awarded best talk,,,
+professional_service,"Organiser, with fellow BSU PhD students, of a one day symposium on chronic diease.",MRC Biostatistics Unit,University of Cambridge,,2021,,,,

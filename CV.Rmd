@@ -1,228 +1,110 @@
 ---
-name: Han
-surname: Zhang
-position: "Postdoctoral Research Fellow"
-address: "Department of Psychology, University of Michigan"
-www: sites.lsa.umich.edu/hanzh
-email: "hanzh@umich.edu"
-#orcid: 0000-0001-6087-0428
-researchgate: Han_Zhang175
-github: HanZhang-psych
-twitter: \_HanZhang_
+name: Andrew
+surname: Manderson
+position: "PhD student"
+address: "MRC Biostatistics Unit, University of Cambridge; The Alan Turing Institute"
+www: hhau.github.io
+email: "andrew-manderson@mrc-bsu.cam.ac.uk"
+orcid: 0000-0002-4946-9016
+github: hhau
+twitter: hhau_stats
 headcolor: 414141 # use black color
 date: "`r format(Sys.time(), '%B %Y')`"
-csl: apa-cv.csl # change this if you want to use other citation styles
+csl: journal-of-the-royal-statistical-society.csl # change this if you want to use other citation styles
 output: 
   vitae::awesomecv:
-    pandoc_args: ["--lua-filter=lua/strong.lua"] 
+    pandoc_args: ["--lua-filter=lua/strong.lua"]
+    keep_tex: true
+    keep_md: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae);library(tibble)
-#rmarkdown::pandoc_version()
+library(vitae)
+library(tibble)
 ```
-
-# Research Interests
-
-Attention; distraction; mind-wandering; eye movements
 
 # Education
 
-```{r}
-tribble(
-  ~ Degree,
-  ~ Advisor,
-  ~ Year,
-  ~ Institution,
-  ~ Where,
-  "Postdoctoral Research Fellow, Department of Psychology",
-  "Advisor: Dr. John Jonides",
-  "05/2020-present",
-  "University of Michigan",
-  "Ann Arbor, MI, USA",
-  "Doctor of Philosophy, Combined Program in Education and Psychology",
-  "Dissertation: Mind-wandering: What Can We Learn from Eye Movements?",
-  "09/2018-05/2020",
-  "University of Michigan",
-  "Ann Arbor, MI, USA",
-  "Master of Science, Combined Program in Education and Psychology",
-  NA,
-  "09/2014-05/2018",
-  "University of Michigan",
-  "Ann Arbor, MI, USA",
-  "Bachelor of Science, Psychology",
-  NA,
-  "09/2010-06/2014",
-  "Beijing Normal University",
-  "Beijing, China",
-) %>%
+```{r edu}
+tibble::tribble(
+                                        ~title,                                 ~inst,       ~location,                     ~time,                                                                            ~description,
+                          "PhD, Biostatistics",             "University of Cambridge",    "Cambridge, UK", "Oct 2018 -- Jun 2022 (expected)", c("Bayesian methods for integrating multiple sources of information, predictive elicitation and Bayesian optimisation.", "Applications include respiratory failure and electronic health records; evidence synthesis models for influenza; population ecology. ", "Funded by a scholarship from The Alan Turing Institute (5 awarded to international students from approx. 300 applications)."),
+            "Master of Philosophy, Statistics", "The University of Western Australia", "Perth, Australia", "Jan 2016 -- Jan 2018", c("Thesis: \\href{https://research-repository.uwa.edu.au/en/publications/methodology-for-bayesian-monotonic-polynomials}{Methodology for Bayesian Monotonic Polynomials}."),
+  "Bachelor of Science, Honours (First class)", "The University of Western Australia", "Perth, Australia", "Jan 2015 -- Nov 2015", c("Thesis: Dynamic Bayesian forecasting of AFL match results using the Skellam distribution.",  "Grade point average: 7/7; Weighted average mark: 86.5/100."),
+                         "Bachelor of Science", "The University of Western Australia", "Perth, Australia", "Mar 2012 -- Nov 2014", c("Majors: Engineering Science, Mathematics and Statistics.", "Grade point average: 6.25/7; Weighted average mark: 78/100.")
+  ) %>%
   detailed_entries(
-    what = Degree,
-    when = Year,
-    with = Institution,
-    where = Where,
-    why = Advisor
+    what = title,
+    when = time,
+    with = inst,
+    where = location,
+    why = description,
+    .protect = FALSE
   )
 ```
 
-# Awards and Grants
+# Work experience
 
-```{r}
-tribble(
-  ~Year, ~Name, ~Institution, ~Supp, ~Amount,
-  '2020', 'Stanley E. and Ruth B. Dimond Best Dissertation Award', 'School of Education, University of Michigan', 'Dissertation: Mind-wandering: What Can We Learn from Eye Movements?', NA,
-  '2020', '2020 ProQuest Distinguished Dissertation Awards (Nomination)','School of Education, University of Michigan', 'Dissertation: Mind-wandering: What Can We Learn from Eye Movements?',NA,
-  '2019', "Rackham One-Term Dissertation Fellowship", "Rackham Graduate School, University of Michigan",NA,'$17417',
-  '2019', "Rackham Graduate Student Research Grant", "Rackham Graduate School, University of Michigan",NA,'$3000',
-  '2019, 2018, 2017', "Rackham Conference Travel Grant","Rackham Graduate School, University of Michigan",NA,'$1050',
-  '2018', "Rackham Summer Training Award","Rackham Graduate School, University of Michigan",NA,'$3700',
-  '2017, 2015', "Professor & Mrs. Cho-Yee To Travel Grant","School of Education, University of Michigan",NA, '$500',
-  '2014', "China National Scholarship","Ministry of Education of the People's Republic of China",NA, '$1500',
-  '2014, 2013', "The First Rank Academic Scholarship","Faculty of Psychology, Beijing Normal University",NA,'$300',
-  '2013', "Beijing Student Research and Entrepreneurial Action Plan","Beijing Municipal Commission of Education",NA,'$1500',
-  '2012', "Undergraduate Student Research Grant","Faculty of Psychology, Beijing Normal University",NA,'$280',
-) %>% 
+```{r exp}
+tibble::tribble(
+                             ~title,                                                                ~inst,          ~location,                  ~time, ~description,
+               "Research Assistant",                                             "MRC Biostatistics Unit",    "Cambridge, UK", "Apr 2020 -- Sep 2020", c("Member of the MRC Biostatistics Unit's DECOVID team, and the project-wide software and tooling team.", "Project used electronic health records to improve care for COVID-19 patients with co-occurring haemotological conditions."),
+               "Research Assistant",              "Oceans Institute, The University of Western Australia", "Perth, Australia", "Mar 2018 -- Sep 2018", c("Statistician on a multidisciplinary team of Oceanographers, Software Engineers and Statisticians.", "Joint project between the UWA Oceans institute and The Alan Turing Institute.", "First author on resulting publication."),
+           "Statistical Consultant", "Centre for Applied Statistics, The University of Western Australia", "Perth, Australia", "Sep 2017 -- Nov 2017", "Applied statistician for veterinary science study into an exercise induced disease in horses.",
+  "Demonstrator, content developer",                                "The University of Western Australia", "Perth, Australia",         "2015 -- 2018", c("Wrote and taught tutorials for masters level unit on Bayesian statistics and computational methods.", "Demonstrator for the first and second year undergraduate classes called 'Statistics for science' and 'Analysis of Observations'.")
+  ) %>%
   detailed_entries(
-    where = Year,
-    with = Name, 
-    what = Institution,
-    why = Supp,
-    when = Amount
-  ) 
+    what = title,
+    when = time,
+    with = inst,
+    where = location,
+    why = description
+  )
 ```
 
-# Peer-reviewd Publications
+# Publications
 
-```{r}
-bibliography_entries("Published.bib")
+```{r pubs}
+bibliography_entries("my-pubs.bib")
 ```
 
-# Work in Progress 
+# Talks
 
-```{r}
-bibliography_entries("In_progress.bib")
+```{r talks}
+tibble::tribble(
+                                                                                  ~title,                                                                ~loc,              ~institution,   ~end,      ~description,
+                               "Combining Chains of Bayesian Models with Markov Melding",                                                           "Multiple",                       "",     "2021", c("Royal Statistical Society's International conference (contributed talk, Sep 2021, Manchester, UK)",  "Joint Statistical Meetings (speed presentation, Aug 2021, virtual)", "Department-wide seminar (May 2021, virtual)"),
+                         "Combining multiple sources of information with Markov melding",                               "The University of Western Australia",        "Perth, Australia", "Feb 2020", "Invited seminar",
+#  "Order selection and Incorporating Random Effects into Bayesian Monotonic Polynomials", "Statistical Society of Australia's Young Statisticians Conference",   "Gold Coast, Australia", "Sep 2017",                  "",
+      "Dynamic Bayesian forecasting of AFL match results using the Skellam distribution",                               "The University of Western Australia",        "Perth, Australia", "Oct 2015", "Awarded best talk out of all mathematics Honours students."
+  ) %>%
+  detailed_entries(
+    with = title,
+    what = loc,
+    when = end,
+    # where = loc,
+    why = description
+  )
 ```
 
-# Book Chapters
+# Service
 
-```{r}
-bibliography_entries("Book_chapters.bib")
-```
+- Reviewer for _Bayesian Analysis_, _Computational Statistics_, _AStA Advances in Statistical Analysis_, _Australian & New Zealand Journal of Statistics_.
+- Co-organiser of \href{https://www.mrc-bsu.cam.ac.uk/event/biostatistics-for-chronic-diseases/}{\textit{Biostatistics for chronic diseases}}, a one day conference (Oct 2021) for the application of biostatistics and statistical genetics to chronic diseases.
 
-# Selected Presentations
+# Skills
 
-```{r}
-bibliography_entries("Presentations.bib")
-```
-
-# Teaching Experience
-
-## Primary Instructor
-
-```{r}
-tribble(
-  ~ Year,
-  ~ Name,
-  ~ Duty,
-  '09/2017 - 12/2017',
-  "EDUC 391: Educational Psychology and Human Development",
-  "Course design; weekly lectures; grading assignments and exams; office hours"
-) %>%
-  detailed_entries(where = Year,
-                   with = Name,
-                   what = Duty) 
-```
-
-
-## Graduate Student Instructor
-
-```{r}
-tribble(
-  ~ Year,
-  ~ Name,
-  ~ Duty,
-  '01/2020 - 05/2020',
-  "PSYCH 457 : Research in Educational and Cross-Cultural Settings",
-  "Grading student essays; office hours; supervising student research projects",
-  '01/2019 - 04/2019',
-  "PSYCH 457 : Research in Educational and Cross-Cultural Settings",
-  "Grading student essays; office hours; supervising student research projects",
-  '01/2018 - 04/2018',
-  "PSYCH 111: Introduction to Psychology",
-  "Three review sessions per week; grading assignments and exams; office hours",
-  '01/2017 - 04/2017',
-  "PSYCH 457 : Research in Educational and Cross-Cultural Settings",
-  "Grading student essays; office hours; supervising student research projects",
-  '09/2016 - 12/2016',
-  "PSYCH 240: Intro to Cognitive Psychology",
-  "Three review sessions per week; grading assignments and exams; office hours",
-  '01/2016 - 04/2016',
-  "PSYCH 457 : Research in Educational and Cross-Cultural Settings",
-  "Grading student essays; office hours; supervising student research projects"
-) %>%
-  detailed_entries(where = Year,
-                   with = Name,
-                   what = Duty) 
-```
-
-## Program Assistant
-
-```{r}
-tribble(
-  ~ Year,
-  ~ Name,
-  ~ Duty,
-  '05/2019',
-  "Global Course Connection: Beijing Normal University",
-  "Supervising joint research projects between US and Chinese students; organizing student activities",
-  '05/2017',
-  'Global Course Connection: Beijing Normal University',
-  "Supervising joint research projects between US and Chinese students; organizing student activities",
-  '05/2016',
-  "Global Course Connection: Beijing Normal University",
-  "Supervising joint research projects between US and Chinese students; organizing student activities",
-  '05/2015',
-  "Global Course Connections: Beijing Normal University",
-  "Supervising joint research projects between US and Chinese students; organizing student activities"
-) %>%
-  detailed_entries(where = Year,
-                   with = Name,
-                   what = Duty) 
-```
-
-# Professional Service
-
-## Ad Hoc Reviewer
-
-* Journal of Experimental Psychology: General
-* Memory & Cognition
-* NeuroImage
-* Visual Cognition
-* Cognitive Science
-* Scientific Studies of Reading
+- I am an expert `R` and `Stan` user, having been regular user of both for nearly 8 years. I make open source contributions to various `R` packages in the `Stan` ecosystem, and have written many of my own R packages to support my research.
+  - See my GitHub for examples, including [`wsre`](https://github.com/hhau/wsre), [`pbbo`](https://github.com/hhau/pbbo), [`ddcurves2`](https://github.com/hhau/ddcurves2), [`rjmonopoly`](https://github.com/hhau/rjmonopoly).
+- I strive to make my research highly reproducible, and consequently make heavy use of `git` and `make`.
+- I have a working knowledge of `SQL` from my work with electronic health records (particularly OMOP, SNOMED/ICD10, MIMIC-III), and `python` from collaborative work with subject-matter experts.
 
 # References
 
-```{r}
-tribble(
-  ~ Name,
-  ~ Title,
-  ~ Contact,
-  'John Jonides, Ph.D.',
-  "Edward E. Smith Professor of Psychology and Neuroscience; Co-Director, functional MRI Center, University of Michigan; Senior Editor, Psychological Science",
-  "jjonides@umich.edu; 734-764-0192",
-  'Kevin F. Miller, Ph.D.',
-  "Professor of Psychology and Education,  University of Michigan",
-  "kevinmil@umich.edu; 734-615-1800",
-  'Priti Shah, Ph.D.',
-  "Professor of Cognition & Cognitive Neuroscience and Educational Psychology, University of Michigan",
-  "priti@umich.edu; 734-615-3745",
-  'Kai S. Cortina, Ph.D.',
-  "Professor of Psychology, University of Michigan",
-  "schnabel@umich.edu; 734-615-3809"
-) %>%
-  detailed_entries(where = Contact,
-                   with = Name,
-                   what = Title) 
-```
+Details available on request
+
+- Dr Robert Goudie (Senior Research Associate, MRC Biostatistics Unit)
+- Dr Berwin Turlach (Associate Professor, the University of Western Australia)
+- Dr Edward Cripps (Associate Professor, the University of Western Australia)
+- Dr Paul Kirk (Group leader (Programme Leader Track), MRC Biostatistics Unit)

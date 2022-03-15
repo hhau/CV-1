@@ -1,0 +1,119 @@
+@article{manderson_combining_2021-1,
+  title = {Combining Chains of {{Bayesian}} Models with {{Markov}} Melding},
+  author = {Manderson, Andrew A. and Goudie, Robert J. B.},
+  year = {2021},
+  month = nov,
+  journal = {Bayesian Analysis (submitted)},
+  url = {arxiv.org/abs/2111.11566},
+  eprint = {2111.11566},
+  eprinttype = {arxiv},
+  primaryclass = {stat},
+  abstract = {A challenge for practitioners of Bayesian inference is specifying a model that incorporates multiple relevant, heterogeneous data. It may be easier to instead specify distinct submodels for each source of data, then join the submodels together. We consider chains of submodels, where submodels directly relate to their neighbours via common quantities which may be parameters or deterministic functions thereof. We propose chained Markov melding, an extension of Markov melding, a generic method to combine chains of submodels into a joint model. One challenge we address is appropriately capturing the prior dependence between common quantities within a submodel, whilst also reconciling differences in priors for the same common quantity between two adjacent submodels. Estimating the posterior of the resulting overall joint model is also challenging, so we describe a sampler that uses the chain structure to incorporate information contained in the submodels in multiple stages, possibly in parallel. We demonstrate our methodology using two examples. The first example considers an ecological integrated population model, where multiple data are required to accurately estimate population immigration and reproduction rates. We also consider a joint longitudinal and time-to-event model with uncertain, submodel-derived event times. Chained Markov melding is a conceptually appealing approach to integrating submodels in these settings.},
+  archiveprefix = {arXiv},
+  keywords = {Statistics - Applications,Statistics - Methodology},
+  note = {Comment: 32 pages, 14 figures},
+  file = {/Users/amanderson/Zotero/storage/6TTYZ53H/Manderson and Goudie - 2021 - Combining chains of Bayesian models with Markov me.pdf;/Users/amanderson/Zotero/storage/VZ823LFQ/2111.html}
+}
+
+@article{manderson_numerically_2022,
+  title = {A Numerically Stable Algorithm for Integrating {{Bayesian}} Models Using {{Markov}} Melding},
+  author = {Manderson, Andrew A. and Goudie, Robert J. B.},
+  year = {2022},
+  journal = {Statistics and Computing (in press)},
+  url = {arxiv.org/abs/2001.08038},
+  abstract = {When statistical analyses consider multiple data sources, Markov melding provides a method for combining the source-specific Bayesian models. Markov melding joins together submodels that have a common quantity. One challenge is that the prior for this quantity can be implicit, and its prior density must be estimated. We show that error in this density estimate makes the two-stage Markov chain Monte Carlo sampler employed by Markov melding unstable and unreliable. We propose a robust two-stage algorithm that estimates the required prior marginal self-density ratios using weighted samples, dramatically improving accuracy in the tails of the distribution. The stabilised version of the algorithm is pragmatic and provides reliable inference. We demonstrate our approach using an evidence synthesis for inferring HIV prevalence, and an evidence synthesis of A/H1N1 influenza.},
+  keywords = {Statistics - Applications,Statistics - Computation,Statistics - Methodology},
+  annotation = {arXiv Preprint: 2001.08038},
+  note = {Comment: 16 pages, 5 figures, 1 table. Major revisions, with substantial changes to Section 3},
+  file = {/Users/amanderson/Zotero/storage/VD84EH27/Manderson and Goudie - 2021 - A numerically stable algorithm for integrating Bay.pdf;/Users/amanderson/Zotero/storage/U8MKUEGW/2001.html}
+}
+
+@article{manderson_uncertainty_2019,
+  title = {Uncertainty Quantification of Density and Stratification Estimates with Implications for Predicting Ocean Dynamics},
+  author = {Manderson, A. A. and Rayson, M. D. and Cripps, E. and Girolami, M. and Gosling, J. P. and Hodkiewicz, M. and Ivey, G. N. and Jones, N. L.},
+  year = {2019},
+  month = jul,
+  journal = {Journal of Atmospheric and Oceanic Technology},
+  volume = {36},
+  number = {7},
+  pages = {1313--1330},
+  publisher = {{American Meteorological Society}},
+  issn = {0739-0572, 1520-0426},
+  doi = {10.1175/JTECH-D-18-0200.1},
+  abstract = {Abstract We present a statistical method for reconstructing continuous background density profiles that embeds incomplete measurements and a physically intuitive density stratification model within a Bayesian hierarchal framework. A double hyperbolic tangent function is used as a parametric density stratification model that captures various pycnocline structures in the upper ocean and offers insight into several density profile characteristics (e.g., pycnocline depth). The posterior distribution is used to quantify uncertainty and is estimated using recent advances in Markov chain Monte Carlo sampling. Temporally evolving posterior distributions of density profile characteristics, isopycnal heights, and nonlinear ocean process models for internal gravity waves are presented as examples of how uncertainty propagates through models dependent on the density stratification. The results show 0.95 posterior interval widths that ranged from 2.5{$\%$} to 4{$\%$} of the expected values for the linear internal wave phase speed and 15{$\%$}–40{$\%$} for the nonlinear internal wave steepening parameter. The data, collected over a year from a through-the-column mooring, and code, implemented in the software package Stan, accompany the article.},
+  chapter = {Journal of Atmospheric and Oceanic Technology},
+  langid = {english},
+  file = {/Users/amanderson/Zotero/storage/627RJSCX/Manderson et al. - 2019 - Uncertainty Quantification of Density and Stratifi.pdf;/Users/amanderson/Zotero/storage/9E5SMJU9/jtech-d-18-0200.1.html}
+}
+
+@incollection{manderson_chapter_2020,
+  title = {Chapter 9 - {{Flexible}} Regression Modelling under Shape Constraints},
+  booktitle = {Flexible {{Bayesian Regression Modelling}}},
+  author = {Manderson, Andrew A. and Murray, Kevin and Turlach, Berwin A.},
+  editor = {Fan, Yanan and Nott, David and Smith, Michael S. and {Dortet-Bernadet}, Jean-Luc},
+  year = {2020},
+  month = jan,
+  pages = {251--279},
+  publisher = {{Academic Press}},
+  doi = {10.1016/B978-0-12-815862-3.00014-7},
+  abstract = {This chapter presents methodology for estimating the posterior distribution of regression models subject to shape constraints. There is a specific focus on estimating and performing covariate selection for monotonic polynomials, however the computational and methodological techniques are more widely applicable. We demonstrate our methodology on a number of simulated and real-world data sets. Our covariate selection code is available as an R package at https://github.com/hhau/rjmonopoly.},
+  isbn = {978-0-12-815862-3},
+  langid = {english},
+  keywords = {constrained monotonic polynomial regression,MCMC,orthonormal design matrices},
+  file = {/Users/amanderson/Zotero/storage/KR5I98YB/B9780128158623000147.html}
+}
+
+@article{crispe_exercise-induced_2019,
+  title = {Exercise-Induced Pulmonary Haemorrhage in {{Thoroughbred}} Racehorses: A Longitudinal Study},
+  shorttitle = {Exercise-Induced Pulmonary Haemorrhage in {{Thoroughbred}} Racehorses},
+  author = {Crispe, E. J. and Secombe, C. J. and Perera, D. I. and Manderson, A. A. and Turlach, B. A. and Lester, G. D.},
+  year = {2019},
+  journal = {Equine Veterinary Journal},
+  volume = {51},
+  number = {1},
+  pages = {45--51},
+  issn = {2042-3306},
+  doi = {10.1111/evj.12957},
+  abstract = {Background Exercise-induced pulmonary haemorrhage (EIPH) is considered a progressive disease based on histopathology, but it is unknown if tracheobronchoscopic EIPH severity worsens over time. Objectives The aim of this study was to examine tracheobronchoscopic EIPH changes over time in a population of Thoroughbred racehorses. A secondary aim was to identify factors that affect changes in tracheobronchoscopic EIPH severity between observations. Study design Prospective, longitudinal, observational cross-sectional study. Methods Thoroughbred racehorses were examined with tracheobronchoscopy no earlier than 30 min after racing. Examinations were recorded and graded blindly by experienced veterinarians using a 0–4 scale. Horses with 2 or more observations were included in the analysis. The association between the previous and current EIPH score was investigated using a linear mixed effect model. Factors associated with transitioning from a lower to a high EIPH grade and vice versa were examined using multiple ordinal regression. A semi-parametric regression model was used to examine progression using the number of career starts as a marker for time. Models were adjusted for potential confounding variables. Results There were 2974 tracheobronchoscopic examinations performed on 747 horses. Blood was detected in over half of all examinations (55.6{$\%$}). The population prevalence of EIPH increased as the number of examinations for each horse increased. The preceding EIPH score was significantly associated with the current EIPH score. Significant variables associated with moving between EIPH grades were the number of days since last racing, ambient temperature and weight carried. Tracheobronchoscopic EIPH is mildly progressive over the first thirty career starts. Main limitations Enrolment was voluntary. Horses were not followed for their entire career. Conclusion Limiting the number of days in the current racing preparation and spacing races for horses with moderate to severe EIPH may be beneficial for reducing tracheobronchoscopic EIPH severity. The association between ambient temperature and EIPH warrants further investigation.},
+  langid = {english},
+  keywords = {EIPH,horse,longitudinal,progression,pulmonary haemorrhage,Thoroughbred},
+  annotation = {{$\_$}eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/evj.12957},
+  file = {/Users/amanderson/Zotero/storage/83IFYSHG/Crispe et al. - 2019 - Exercise-induced pulmonary haemorrhage in Thorough.pdf;/Users/amanderson/Zotero/storage/N72ILAJ2/evj.html}
+}
+
+@article{manderson_dynamic_2018,
+  title = {Dynamic {{Bayesian}} Forecasting of {{AFL}} Match Results Using the {{Skellam}} Distribution},
+  author = {Manderson, A. A. and Murray, K. and Turlach, B. A.},
+  year = {2018},
+  journal = {Australian {$\&$} New Zealand Journal of Statistics},
+  volume = {60},
+  number = {2},
+  pages = {174--187},
+  issn = {1467-842X},
+  doi = {10.1111/anzs.12225},
+  abstract = {The scoring and defensive abilities of Australian Rules Football teams change over time as a result of evolving player rosters, tactics and other management factors. We develop a dynamic model based on the Poisson difference (Skellam) distribution which simultaneously models the two different point scoring mechanisms in Australian Rules Football, the motivation for which comes from work on predicting outcomes in soccer matches. Our model is developed in a Bayesian framework and is fitted using the Stan modelling language. Model validation is performed on the 2015 Australian Football league (AFL) home and away season.},
+  langid = {english},
+  keywords = {Australian rules football,Bayesian hierarchical models,dynamic models,Skellam,Stan},
+  annotation = {{$\_$}eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/anzs.12225},
+  file = {/Users/amanderson/Zotero/storage/X8DFKUFP/Manderson et al. - 2018 - Dynamic Bayesian forecasting of AFL match results .pdf;/Users/amanderson/Zotero/storage/INEFQ3PR/anzs.html}
+}
+
+@article{manderson_monotone_2017,
+  title = {Monotone Polynomials Using {{BUGS}} and {{Stan}}},
+  author = {Manderson, A. A. and Cripps, E. and Murray, K. and Turlach, B. A.},
+  year = {2017},
+  journal = {Australian {$\&$} New Zealand Journal of Statistics},
+  volume = {59},
+  number = {4},
+  pages = {353--370},
+  issn = {1467-842X},
+  doi = {10.1111/anzs.12207},
+  abstract = {We present methods to fit monotone polynomials in a Bayesian framework, including implementations in the popular, readily available, modeling languages BUGS and Stan. The sum-of-squared polynomials parameterisation of monotone polynomials previously considered in the frequentist framework by Murray, Müller {$\&$} Turlach (2016), is again considered here, due to its superior flexibility compared to other parameterisations. The specifics of our implementation are discussed, enabling end users to adapt this work to their applications. Testing was undertaken on real and simulated data sets, the output and diagnostics of which are presented. We demonstrate that Stan is preferable for high degree polynomials, with the component-wise nature of Gibbs sampling being potentially inappropriate for such highly connected models. All code discussed here, and sample scripts that show how to use it from R, is freely available at https://github.com/hhau/BayesianMonPol.},
+  langid = {english},
+  keywords = {BUGS,convolution,Markov Chain Monte Carlo,monotone polynomials,Stan},
+  annotation = {{$\_$}eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/anzs.12207},
+  file = {/Users/amanderson/Zotero/storage/T7Y2MKWS/Manderson et al. - 2017 - Monotone polynomials using BUGS and Stan.pdf;/Users/amanderson/Zotero/storage/G2ZWYAZB/anzs.html}
+}
+
+
+
